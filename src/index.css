@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+/* Pinned stacking cards only when the whole card fits on screen. */
+@custom-variant stack (@media (min-width: 901px) and (min-height: 700px));
+/* Phones and tablets without a mouse. */
+@custom-variant touch (@media (hover: none) and (pointer: coarse));
+
+@theme {
+  --color-paper: #f2f5f1;
+  --color-paper-2: #e6ece5;
+  --color-ink: #13201a;
+  --color-ink-soft: #56635b;
+  --color-moss: #1e6a49;
+  --color-moss-deep: #0f3d2a;
+  --color-mint: #8fd9b3;
+  --color-mint-light: #a9e5c5;
+  --color-line: #d5ddd7;
+
+  --font-sans: 'Schibsted Grotesk', system-ui, sans-serif;
+
+  /* phone < 641 ≤ sm (tablet portrait) < 901 ≤ lg (tablet landscape / laptop) < 1201 ≤ xl */
+  --breakpoint-sm: 40.0625rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 56.3125rem;
+  --breakpoint-xl: 75.0625rem;
+
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --animate-menu-in: menu-in 0.5s var(--ease-out-soft) both;
+  --animate-lightbox-in: lightbox-in 0.35s var(--ease-out-soft);
+  --animate-shot-in: shot-in 0.3s ease-out;
+
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+  }
+  @keyframes lightbox-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.98);
+    }
+  }
+  @keyframes shot-in {
+    from {
+      opacity: 0.2;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 76px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html:not(.lenis) {
+    scroll-behavior: smooth;
+  }
+  html.is-locked,
+  html.is-locked body {
+    overflow: hidden;
+  }
+  body {
+    @apply bg-paper font-sans text-[1rem] leading-[1.55] text-ink antialiased sm:text-[1.0625rem];
+  }
+  :focus-visible {
+    @apply rounded-md outline-2 outline-offset-3 outline-moss;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
