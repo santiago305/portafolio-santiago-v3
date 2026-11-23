@@ -9,9 +9,9 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/santiago-yacila',
   github: 'https://github.com/santiago305',
   // Drop the updated CV at public/cv-santiago-yacila.pdf
-  cv: '/cv-santiago-yacila.pdf',
+  cv: 'cv-santiago-yacila.pdf',
   // Replace public/me.svg with your photo (e.g. public/me.webp) and update this path
-  photo: '/me.webp',
+  photo: 'me.webp',
 }
 
 export const ui = {
@@ -115,11 +115,11 @@ export const projects: Project[] = [
     role: { es: 'Arquitecto y desarrollador, liderando a 2 programadores', en: 'Architect and developer, leading 2 engineers' },
     stack: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Redis', 'Arquitectura hexagonal'],
     shots: [
-      { src: '/projects/eunoia-couriers.webp', alt: { es: 'Finanzas de couriers con saldos y gráficos', en: 'Courier finances with balances and charts' } },
-      { src: '/projects/eunoia-enganches.webp', alt: { es: 'Origen de los pedidos por canal', en: 'Order sources by channel' } },
-      { src: '/projects/eunoia-pedidos.webp', alt: { es: 'Listado de pedidos', en: 'Orders list' } },
-      { src: '/projects/eunoia-compras.webp', alt: { es: 'Compras a proveedores', en: 'Supplier purchases' } },
-      { src: '/projects/eunoia-agencias.webp', alt: { es: 'Agencias de envío', en: 'Shipping agencies' } },
+      { src: 'projects/eunoia-couriers.webp', alt: { es: 'Finanzas de couriers con saldos y gráficos', en: 'Courier finances with balances and charts' } },
+      { src: 'projects/eunoia-enganches.webp', alt: { es: 'Origen de los pedidos por canal', en: 'Order sources by channel' } },
+      { src: 'projects/eunoia-pedidos.webp', alt: { es: 'Listado de pedidos', en: 'Orders list' } },
+      { src: 'projects/eunoia-compras.webp', alt: { es: 'Compras a proveedores', en: 'Supplier purchases' } },
+      { src: 'projects/eunoia-agencias.webp', alt: { es: 'Agencias de envío', en: 'Shipping agencies' } },
     ],
   },
   {
@@ -138,10 +138,10 @@ export const projects: Project[] = [
     role: { es: 'Desarrollador único, de la arquitectura al despliegue', en: 'Sole developer, from architecture to deployment' },
     stack: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'Redis', 'Snapshots'],
     shots: [
-      { src: '/projects/fuvx-bancaria.webp', alt: { es: 'Panel de búsqueda automatizada', en: 'Automated lookup dashboard' } },
-      { src: '/projects/fuvx-filtrar.webp', alt: { es: 'Resultados del filtrado', en: 'Filtering results' } },
-      { src: '/projects/fuvx-asistencia.webp', alt: { es: 'Estadísticas de asistencia', en: 'Attendance statistics' } },
-      { src: '/projects/fuvx-clientes.webp', alt: { es: 'Base de clientes', en: 'Client base' } },
+      { src: 'projects/fuvx-bancaria.webp', alt: { es: 'Panel de búsqueda automatizada', en: 'Automated lookup dashboard' } },
+      { src: 'projects/fuvx-filtrar.webp', alt: { es: 'Resultados del filtrado', en: 'Filtering results' } },
+      { src: 'projects/fuvx-asistencia.webp', alt: { es: 'Estadísticas de asistencia', en: 'Attendance statistics' } },
+      { src: 'projects/fuvx-clientes.webp', alt: { es: 'Base de clientes', en: 'Client base' } },
     ],
   },
   {
@@ -161,9 +161,9 @@ export const projects: Project[] = [
     stack: ['React', 'GSAP', 'Lenis', 'Vite'],
     url: 'https://www.visualblack.es/',
     shots: [
-      { src: '/projects/visualblack-home.webp', alt: { es: 'Portada de Visual Black', en: 'Visual Black home page' } },
-      { src: '/projects/visualblack-dev.webp', alt: { es: 'Página del departamento Developer', en: 'Developer department page' } },
-      { src: '/projects/visualblack-mid.webp', alt: { es: 'Manifiesto con texto animado', en: 'Manifesto with animated text' } },
+      { src: 'projects/visualblack-home.webp', alt: { es: 'Portada de Visual Black', en: 'Visual Black home page' } },
+      { src: 'projects/visualblack-dev.webp', alt: { es: 'Página del departamento Developer', en: 'Developer department page' } },
+      { src: 'projects/visualblack-mid.webp', alt: { es: 'Manifiesto con texto animado', en: 'Manifesto with animated text' } },
     ],
   },
 ]
