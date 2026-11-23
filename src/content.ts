@@ -8,8 +8,8 @@ export const profile = {
   whatsappLabel: '+51 962 636 946',
   linkedin: 'https://www.linkedin.com/in/santiago-yacila',
   github: 'https://github.com/santiago305',
-  // Drop the updated CV at public/cv-santiago-yacila.pdf
-  cv: 'cv-santiago-yacila.pdf',
+  // Drop the updated CV at public/cv.pdf
+  cv: 'cv.pdf',
   // Replace public/me.svg with your photo (e.g. public/me.webp) and update this path
   photo: 'me.webp',
 }
